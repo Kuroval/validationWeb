@@ -1,0 +1,55 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#tarjeta{
+    margin: 0 auto;
+    width: 70vw ;
+}
+
+#nombre{
+    background: rgb(163,163,163);
+    background: linear-gradient(0deg, rgba(163,163,163,1) 0%, rgba(255,255,255,1) 100%); 
+    border: 0.2em solid black;
+}
+
+#nombre h1, #nombre p{
+    margin-left: 5%;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+#json{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(154,251,134,1) 100%);
+    border: 0.2em solid rgb(74, 216, 46);
+    
+}
+
+#xml{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,243,147,1) 100%); 
+    border: 0.2em solid rgb(230, 210, 66);
+}
+
+#json, #xml{ 
+    width: 50%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+.indentado{
+    margin-left: 2em;
+}

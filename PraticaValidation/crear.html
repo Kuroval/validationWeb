@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/validator.js"></script>
+    <script type="module" src="js/crear.js"></script>
+    <script type="module" src="js/home.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Terapia de Choque</title>
+</head>
+
+<body>
+    <form action="./index.html" autocomplete="on" action="./index.html" method="GET" id='idForm'>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="iNombre">Nombre</label>
+            <input type="text" id="iNombre" name="iNombre" autocomplete="given-name" placeholder="Nombre">
+            <span class="error" id="nombreError" aria-live="polite"></span>
+            <label for="iApellido">Apellido</label>
+            <input type="text" id="iApellido" name="iApellido" autocomplete="family-name" placeholder="Apellido/s">
+            <span class="error" id="apellError" aria-live="polite"></span>
+            <label for="iTlfno">Teléfono</label>
+            <input type="text" name="iTlfno" id="iTlfno" placeholder="Número de teléfono">
+            <span class="error" id="tfnoError" aria-live="polite"></span>
+            <label for="iNacimiento">Fecha Nacimiento</label>
+            <input type="date" id="iNacimiento" name="iNacimiento" autocomplete="bday">
+            <span class="error" id="nacError" aria-live="polite"></span>
+            <span class="error" id="nacErrorMayor" aria-live="polite"></span>
+            <label for="interes">Interesado en:</label>
+            <select name="interes" id="iInteres">
+                <option value="accion">Acción</option>
+                <option value="terror">Terror</option>
+                <option value="ficcion">Ficción</option>
+                <option value="drama">Drama</option>
+            </select>
+            <div class="inRow">
+                <label><input type="radio" name="genero" value="hombre" checked>Hombre</label>
+                <label><input type="radio" name="genero" value="mujer">Mujer</label>
+                <label><input type="radio" name="genero" value="otro">Otro</label>
+            </div>
+            <span class="error" id="generoError" aria-live="polite"></span>
+        </fieldset>
+        <fieldset>
+            <legend>Datos Bancarios/Password</legend>
+            <label for="iBan">Iban</label>
+            <div class="inRow">
+                <input type="number" id="ccc1" placeholder="0000" max="9999" size="4" minlength="4">
+                <input type="number" id="ccc2" placeholder="0000" max="9999" size="4" minlength="4">
+                <input type="number" id="ccc3" placeholder="00" max="99" size="2" minlength="2">
+                <input type="number" id="ccc4" placeholder="0000000000" max="9999999999" size="10" minlength="10">
+            </div>
+            <span class="error" id="ibanError" aria-live="polite"></span>
+            <label for="iPass">Password</label>
+            <input type="Password" id="iPass" name="iPass">
+            <span class="error" id="passError" aria-live="polite"></span>
+            <div class="submit">
+                <input type="submit" class="createButton" value="Registrar">
+            </div>
+        </fieldset>
+        <span class="error" id="error" aria-live="polite"></span>
+    </form>
+</body>
+
+</html>
